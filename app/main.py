@@ -6,6 +6,7 @@ from app.core.config import settings
 from app.models.database import Base, engine
 from app.api.leads import router as leads_router
 from app.api.webhooks import router as webhooks_router
+from fastapi.responses import RedirectResponse
 
 
 @asynccontextmanager
@@ -33,9 +34,4 @@ app.include_router(webhooks_router)
 
 @app.get("/")
 def root():
-    return {
-        "service": settings.APP_NAME,
-        "status": "running",
-        "docs": "/docs",
-        "health": "/health",
-    }
+    return RedirectResponse(url="/docs")
