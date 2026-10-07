@@ -1,5 +1,12 @@
 # Zizzet AI Lead Recovery Engine
 
+## 🚀 Live Demo
+
+**Live API / Swagger Demo:**  
+https://zizzet-ai-lead-recovery.onrender.com
+
+The live demo opens the interactive Swagger UI for testing all API endpoints.
+
 AI-powered backend for identifying high-intent and inactive leads, analyzing conversations, recommending the next best action, and generating personalized follow-ups.
 
 Built for the Zizzet AI Backend Developer Intern technical screening task.
