@@ -31,9 +31,11 @@ app.include_router(leads_router)
 app.include_router(webhooks_router)
 
 
-@app.get("/health")
-def health_check():
+@app.get("/")
+def root():
     return {
-        "status": "healthy",
         "service": settings.APP_NAME,
+        "status": "running",
+        "docs": "/docs",
+        "health": "/health",
     }
